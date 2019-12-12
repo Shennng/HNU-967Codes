@@ -4,13 +4,15 @@
 
 // 18年 题目1 数值计算pow幂函数
 int main(){
-	int i,n;
-	float a,s;
-	scanf("%d %f",&n,&a);
+	int i,n,a,m=0;
+	double s;
+	scanf("%d %d",&n,&a);
 	for(i=1;i<=n;i++){
-		s+=pow(a,i);
+        m=m*10+a;
+        s+=m;
+		printf("%d\n",m);
     }
-    printf("%f\n",s);
+    printf("%lf\n",s);
 	return 0;
 }
 
